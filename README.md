@@ -1,4 +1,4 @@
-# 🚀 TypeScript Fundamentals
+🚀 TypeScript Fundamentals
 
 ## What is TypeScript?
 
