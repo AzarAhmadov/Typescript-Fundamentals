@@ -15,7 +15,11 @@ It is designed for developing enterprise scale JavaScript applications.
 - Enums
 - Functions
 - Objects
-- Type 
+- Type Aliases
+- Union Types 
+- Intersection Types
+- Literal Types
+- Optional Chaining
 
 ## Built-in Types
 
@@ -103,7 +107,7 @@ let person: Person = {
   age: 30
 };
 ```
-## Type
+## Type Alias
 
 The type keyword in TypeScript allows you to create aliases for types. 
 It's particularly useful when you want to reuse complex type definitions:
@@ -115,3 +119,49 @@ type Point = {
 
 let coordinates: Point = { x: 1, y: 2 };
 ```
+## Union Types
+
+Union types allow a variable to have multiple types. It's denoted using the | operator.
+```
+let result: string | number;
+result = "Success";
+result = 42;
+```
+## Intersection Types
+
+Intersection types combine multiple types into one.
+```
+type Printable = { print: () => void };
+type Loggable = { log: () => void };
+
+type LoggableAndPrintable = Printable & Loggable;
+```
+
+## Literal Types
+
+Literal types allow you to specify exact values for a variable.
+```
+let status: "success" | "error";
+status = "success";
+```
+
+## Optional Chaining
+
+Optional chaining is a feature that simplifies property access, 
+especially when dealing with potentially null or undefined values.
+
+```
+interface User {
+  details?: {
+    address?: {
+      city?: string;
+    };
+  };
+}
+
+const user: User = {};
+const cityName = user.details?.address?.city;
+console.log(cityName); // Output: undefined
+```
+
+
