@@ -1,5 +1,3 @@
-/*
-
 # 🚀 TypeScript Fundamentals
 
 ## What is TypeScript?
@@ -115,5 +113,3 @@ type Point = {
 };
 
 let coordinates: Point = { x: 1, y: 2 };
-
-*/
