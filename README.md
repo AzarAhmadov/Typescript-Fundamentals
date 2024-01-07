@@ -50,9 +50,9 @@ let is_published = true;
 The any type in TypeScript represents any kind of value.
 However, it's recommended to avoid using any as much as possible, 
 as it undermines the benefits of using TypeScript's static typing.
-
+```
 const level: any;
-
+```
 ## Arrays
 
 Arrays in TypeScript can be declared with explicit type annotations:
