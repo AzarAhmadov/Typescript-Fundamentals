@@ -9,7 +9,7 @@ It is designed for developing enterprise scale JavaScript applications.
 ## Topics
 
 - Primitive Types
-- The `any` Type
+- The any Type
 - Arrays
 - Tuples
 - Enums
